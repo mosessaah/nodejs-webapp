@@ -15,19 +15,10 @@ pipeline {
             steps {
                 script {
                     // build image
-                    docker.build("mosessaah/nodejs-webapp:latest")
+                    docker.build("231006079632.dkr.ecr.us-east-1.amazonaws.com/nodejs-webapp:latest")
                }
             }
         }
-         stage('tag Docker Image') {
-            steps {
-                script {
-                    // tag image
-                    docker.tag("mosessaah/nodejs-webapp:latest 231006079632.dkr.ecr.us-east-1.amazonaws.com/nodejs-webapp:latest")
-               }
-            }
-        }
-
 
         stage('Trivy Scan (Aqua)') {
             steps {
