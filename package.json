@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-webapp",
+  "version": "1.0.0",
+  "description": "A simple nodejs application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moses A Saah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mocha": "^10.2.0"
+  }
+}
