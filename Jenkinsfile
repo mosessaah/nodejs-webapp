@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // build image
-                    docker.build("mosessaah/nodejs-webapp .")
+                    docker.build("mosessaah/nodejs-webapp:latest")
                }
             }
         }
